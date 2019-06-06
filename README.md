@@ -1,83 +1,61 @@
-* [English](#chromium-with-ssl-vpn)
-* [简体中文](#chromium浏览器)
+[English](README_en.md)
 
-# Chromium浏览器
+# JJQQKK上网助手
 
-直接内置翻墙代理的Google Chromium浏览器。
+JJQQKK上网助手让Windows和macOS桌面电脑用户自动获得科学上网工具，包括：
 
-![](screenshot.png)
-
-最新版本：[73.0.3683.67](https://github.com/jjqqkk/chromium/releases/tag/73.0.3683.67)
-
-[Chromium](https://github.com/chromium/chromium)是Google Chrome浏览器的开源版本，两者共享大部分代码。新的开发和改进先通过Chromium项目完成，大约通过6周测试后再由Google官方发布，因此Chromium是Chrome先行版本。
-
-## Windows (10/8/7)
-
-[内置VPN版本](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-windows-73.0.3683.67.zip)
-
-[备用下载地址](http://167.99.163.129/Chromium-windows-73.0.3683.67.zip)
-
-[原始版本，可安装插件](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-windows-novpn.zip)
-
-### 使用方法
-
-下载zip文件后解压缩，从解压后目录里运行**chromium.exe**。
-
-## Mac
-
-[内置VPN版本](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-mac-73.0.3683.67.zip)
-
-[备用下载地址](http://167.99.163.129/Chromium-mac-73.0.3683.67.zip)
-
-[原始版本，可安装插件](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-mac-novpn.zip)
-
-### 使用方法
-
-下载zip文件后解压缩，直接得到App。由于签名问题，首次运行，按住Control点图标，从菜单里打开App。之后直接双击图标即可运行。
-
-
-## 如何解决Windows版本崩溃？
-[issue #78](https://github.com/jjqqkk/chromium/issues/78) Thanks [leoxxnet](https://github.com/leoxxnet)
+* 内置科学上网的Google Chromium浏览器 
+* 启动全网加速模式，加密所有网络活动（仅支持macOS，Windows版本将尽快推出）
 
 
 
+## 下载JJQQKK
+
+[Windows安装包](http://206.189.78.230/JJQQKK-2.0.0.msi)
+
+[macOS安装包](http://206.189.78.230/JJQQKK-2.0.0.pkg)
+
+Windows用户安装msi之后手工启动JJQQKK，从桌面右下角图标启动浏览器。
+
+![](images/windows-icon.png)
+
+macOS用户安装pkg之后，系统自动运行JJQQKK，通过顶端任务栏图标使用JJQQKK。
+
+![](images/mac-icon.png)
 
 
-# Chromium with SSL VPN
+## 关于Chromium浏览器
 
-Chromium with SSL VPN lets you unblock websites directly in the browser.
+Chromium是Google為發展自家的瀏覽器Google Chrome而開啟的計畫，以BSD授權條款等數種授權發行並開放原始碼。Chromium与Google Chrome共享大部分程式碼和功能，但功能和商標之間有一些細微差別。
 
-![](screenshot.png)
+Chromium的更新速度很快，每隔數小時即有新的開發版本發佈，每次的更新幅度不一定相同，可能增加新功能，或者單純修正問題，由於新功能會先在Chromium上測試，等待認證後才會應用在Google Chrome上，所以Chromium相當於Google Chrome的先行版。
 
-Latest version: [73.0.3683.67](https://github.com/jjqqkk/chromium/releases/tag/73.0.3683.67)
-
-Chromium is the open source project behind the Google Chrome browser. It is a fully functional browser and also widely used by other parties to create their own browsers. Many vendors use the code in a similar manner as Google, while others simply build it as-is and release browsers with the Chromium name.
-
-This build takes advantage of the [VPN](https://developer.chrome.com/extensions/vpnProvider) and [Proxy](https://developer.chrome.com/extensions/proxy) API developed by Google. 
-
-## Windows 10/8/7
-
-[Built-in VPN](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-windows-73.0.3683.67.zip)
-
-[Backup download site](http://167.99.163.129/Chromium-windows-73.0.3683.67.zip)
-
-[Original Chromium](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-windows-novpn.zip)
-
-## macOS
-
-[Built-in VPN](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-mac-73.0.3683.67.zip)
-
-[Backup download site](http://167.99.163.129/Chromium-mac-73.0.3683.67.zip)
-
-[Original Chromium](https://github.com/jjqqkk/chromium/releases/download/73.0.3683.67/Chromium-mac-novpn.zip)
+如需手工下载Chromium，请从[Releases页面](https://github.com/jjqqkk/chromium/releases)下载最新版本。旧版本可能无法正常使用科学上网。
 
 
-## How to upgrade Chromium?
+## 常见问题
 
-We will follow [Google's release schedule](https://chromiumdash.appspot.com/schedule) and post the binaries on the [releases](https://github.com/jjqqkk/chromium/releases) page.
+**无法安装插件**
 
-Users are free to download newer versions. There will be no conflict to having two Chromium on the same computer.
+由于内置的代理组件无法完美兼容Chrome Extension，这款浏览器屏蔽了插件系统，以防止安装插件之后彻底毁坏代理能力。未来会有其他解决方案。
 
-## How to uninstall Chromium?
+**无法登录Google和使用同步功能**
 
-Simply delete the folder on Windows, or the app on macOS.
+出于安全考虑，Chromium没有配置Google API，所以无法像Chrome一样登录浏览器。打开浏览器时会提示"missing API key"。
+
+**是否提供64位Windows版本**
+
+Windows版本Chromium默认使用32位编译，完美支持所有32位和64位系统，不存在兼容性问题。32位浏览器运行文件更小。所以如果没有功能方面的明显差异，只提供32位Windows浏览器。
+
+
+## 避免失联
+
+电邮：jjjqqqkkk@gmx.com
+
+可通过电邮获得最新软件下载地址。
+
+
+## 拍照分享
+
+![](images/readme.png)
+
