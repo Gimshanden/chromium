@@ -2,22 +2,49 @@
 
 # JJQQKK上网助手
 
-JJQQKK上网助手让Windows和macOS桌面电脑用户自动获得科学上网工具，包括：
+JJQQKK提供Windows和macOS版本的VPN和内置代理服务的Chromium浏览器。
 
-* 内置科学上网的Google Chromium浏览器 
-* 启动全网加速模式，加密所有网络活动（仅支持macOS，Windows版本将尽快推出）
+用户可以任选一种方式科学上网：
 
+* 启动VPN，加密所有网络活动（推荐）
+* 通过Chromium浏览器访问所有网站
+
+JJQQKK支持32/64位Windows 7/8/10，10.12以上版本的macOS。
 
 
 ## 下载JJQQKK
 
-[Windows安装包](http://206.189.78.230/JJQQKK-2.0.0.msi)
+### Windows安装包
 
-[macOS安装包](http://206.189.78.230/JJQQKK-2.0.0.pkg)
+[下载地址一](http://206.189.78.230/JJQQKK-2.1.0.msi)
 
-Windows用户安装msi之后手工启动JJQQKK，从桌面右下角图标启动浏览器。
+[下载地址二](https://github.com/jjqqkk/chromium/releases/download/76.0.3809.12/JJQQKK-2.1.0.msi)
 
-![](images/windows-icon.png)
+运行msi安装程序，安装之后双击桌面图标，启动程序。
+
+首次使用，请务必安装OpenVPN驱动。每个步骤都采用默认设置即可。
+
+![](images/windows-install-driver.png)
+
+JJQQKK每次启动时会自动下载最新版Chromium浏览器。
+
+![](images/windows-getting-chrome.png)
+
+通过桌面任务栏图标操作JJQQKK。
+
+有两种上网方式可供选择，推荐使用VPN。启动VPN之后，电脑上所有网络活动都被加密。
+
+如果仅需浏览网页，或者VPN暂时无法连接时，用内置代理服务的Chromium浏览器。
+
+![](images/windows-tray.png)
+
+
+### macOS安装包
+
+[下载地址一](http://206.189.78.230/JJQQKK-2.1.0.pkg)
+
+[下载地址二](https://github.com/jjqqkk/chromium/releases/download/76.0.3809.12/JJQQKK-2.1.0.pkg)
+
 
 macOS用户安装pkg之后，系统自动运行JJQQKK，通过顶端任务栏图标使用JJQQKK。
 
